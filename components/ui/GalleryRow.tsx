@@ -95,7 +95,7 @@ export function GalleryRow({ folder, images, alt }: GalleryRowProps) {
           <div
             className="relative max-w-3xl max-h-[90vh] w-full mx-4"
             onClick={(e) => e.stopPropagation()}
-            onTouchStart={(e) => { touchStartX.current = e.touches[0].clientX; }}
+            onTouchStart={(e) => { if (e.touches[0]) touchStartX.current = e.touches[0].clientX; }}
             onTouchEnd={(e) => {
               if (touchStartX.current === null) return;
               const diff = touchStartX.current - e.changedTouches[0].clientX;
