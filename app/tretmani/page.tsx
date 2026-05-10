@@ -8,8 +8,6 @@ export const metadata = {
     "Moji tretmani poboljšavaju izgled i podižu samopouzdanje. PMU, tetovaže, uklanjanje tetovaža, tretmani lica i više — Studio Revive Beograd.",
 };
 
-const ostaleTretmani: { title: string; image: string }[] = [];
-
 export default function TretmaniPage() {
   return (
     <>

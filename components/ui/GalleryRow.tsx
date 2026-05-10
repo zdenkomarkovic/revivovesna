@@ -99,7 +99,7 @@ export function GalleryRow({ folder, images, alt }: GalleryRowProps) {
             onTouchEnd={(e) => {
               if (touchStartX.current === null) return;
               const diff = touchStartX.current - e.changedTouches[0].clientX;
-              if (Math.abs(diff) > 50) diff > 0 ? next() : prev();
+              if (Math.abs(diff) > 50) { if (diff > 0) next(); else prev(); }
               touchStartX.current = null;
             }}
           >

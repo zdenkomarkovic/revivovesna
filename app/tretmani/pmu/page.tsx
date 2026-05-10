@@ -114,8 +114,8 @@ export default function PmuPage() {
                 <p className="text-muted text-base leading-7">
                   Trajna šminka na obrvama je jedan od najpopularnijih tretmana, jer
                   omogućava savršeno oblikovane i ujednačene obrve koje traju mesecima.
-                  Postoji nekoliko tehnika, kao što su "hairstroke" metoda, iscrtavanje
-                  dlačica, koja simulira prirodne dlačice, ili "powder brows" tehnika koja
+                  Postoji nekoliko tehnika, kao što su &ldquo;hairstroke&rdquo; metoda, iscrtavanje
+                  dlačica, koja simulira prirodne dlačice, ili &ldquo;powder brows&rdquo; tehnika koja
                   stvara mekanu i praskastu površinu.
                 </p>
               </div>
