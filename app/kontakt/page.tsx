@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Navbar from "@/components/layout/Navbar";
+import { trackPhoneConversion } from "@/lib/gtag";
 import Footer from "@/components/layout/Footer";
 import {
   STUDIO_PHONE,
@@ -82,7 +83,7 @@ export default function KontaktPage() {
                     <div className="w-px bg-gold/30 self-stretch flex-shrink-0 mt-1" />
                     <div>
                       <div className="text-xs text-muted tracking-widest uppercase mb-1">Telefon</div>
-                      <a href={`tel:${STUDIO_PHONE}`} className="text-cream text-base hover:text-gold transition-colors">
+                      <a href={`tel:${STUDIO_PHONE}`} onClick={trackPhoneConversion} className="text-cream text-base hover:text-gold transition-colors">
                         {STUDIO_PHONE}
                       </a>
                     </div>
@@ -91,7 +92,7 @@ export default function KontaktPage() {
                     <div className="w-px bg-gold/30 self-stretch flex-shrink-0 mt-1" />
                     <div>
                       <div className="text-xs text-muted tracking-widest uppercase mb-1">WhatsApp</div>
-                      <a href={STUDIO_WHATSAPP} target="_blank" rel="noopener noreferrer" className="text-cream text-base hover:text-gold transition-colors">
+                      <a href={STUDIO_WHATSAPP} onClick={trackPhoneConversion} target="_blank" rel="noopener noreferrer" className="text-cream text-base hover:text-gold transition-colors">
                         {STUDIO_PHONE}
                       </a>
                     </div>
@@ -100,7 +101,7 @@ export default function KontaktPage() {
                     <div className="w-px bg-gold/30 self-stretch flex-shrink-0 mt-1" />
                     <div>
                       <div className="text-xs text-muted tracking-widest uppercase mb-1">Viber</div>
-                      <a href={STUDIO_VIBER} className="text-cream text-base hover:text-gold transition-colors">
+                      <a href={STUDIO_VIBER} onClick={trackPhoneConversion} className="text-cream text-base hover:text-gold transition-colors">
                         {STUDIO_PHONE}
                       </a>
                     </div>

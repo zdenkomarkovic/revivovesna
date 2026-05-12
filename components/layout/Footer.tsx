@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { trackPhoneConversion } from "@/lib/gtag";
 import {
   STUDIO_PHONE,
   STUDIO_EMAIL,
@@ -29,7 +32,7 @@ export default function Footer() {
             </p>
             <ul className="space-y-3 text-base text-muted">
               <li>
-                <a href={`tel:${STUDIO_PHONE}`} className="hover:text-gold transition-colors">
+                <a href={`tel:${STUDIO_PHONE}`} onClick={trackPhoneConversion} className="hover:text-gold transition-colors">
                   {STUDIO_PHONE}
                 </a>
               </li>
@@ -43,6 +46,7 @@ export default function Footer() {
             <div className="flex flex-col gap-2 mt-6">
               <a
                 href={STUDIO_WHATSAPP}
+                onClick={trackPhoneConversion}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-sm text-muted hover:text-gold transition-colors"
@@ -54,6 +58,7 @@ export default function Footer() {
               </a>
               <a
                 href={STUDIO_VIBER}
+                onClick={trackPhoneConversion}
                 className="flex items-center gap-2 text-sm text-muted hover:text-gold transition-colors"
               >
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" className="shrink-0">

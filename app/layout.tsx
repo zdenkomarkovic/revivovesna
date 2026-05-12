@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Cormorant_Garamond, DM_Sans } from "next/font/google";
+import Script from "next/script";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -42,6 +43,21 @@ export default function RootLayout({
 }) {
   return (
     <html lang="sr" className={`${cormorant.variable} ${dmSans.variable}`}>
+      <head>
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-18126386464"
+          strategy="afterInteractive"
+        />
+        <Script id="google-ads" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-18126386464');
+          `}
+        </Script>
+      </head>
       <body>{children}</body>
     </html>
   );

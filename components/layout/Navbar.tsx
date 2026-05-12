@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { trackPhoneConversion } from "@/lib/gtag";
 
 const navLinks = [
   { href: "/", label: "Početna" },
@@ -194,6 +195,7 @@ export default function Navbar() {
         <div className="flex items-center gap-4">
           <a
             href="tel:+381669717706"
+            onClick={trackPhoneConversion}
             className="hidden lg:inline-flex border-2 border-gold text-gold text-sm tracking-[0.15em] font-bold px-6 py-2.5 hover:bg-gold hover:text-dark hover:border-gold transition-all duration-200"
           >
             +381 66 971 7706
@@ -201,6 +203,7 @@ export default function Navbar() {
 
           <a
             href="tel:+381669717706"
+            onClick={trackPhoneConversion}
             className="lg:hidden absolute left-1/2 -translate-x-1/2 border border-gold text-gold text-xs tracking-[0.1em] font-normal px-3 py-1.5 hover:bg-gold hover:text-dark transition-all duration-200"
           >
             +381 66 971 7706

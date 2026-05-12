@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { trackPhoneConversion } from "@/lib/gtag";
 import {
   STUDIO_PHONE,
   STUDIO_EMAIL,
@@ -62,6 +63,7 @@ export default function Contact() {
                     </div>
                     <a
                       href={`tel:${STUDIO_PHONE}`}
+                      onClick={trackPhoneConversion}
                       className="text-cream text-base hover:text-gold transition-colors"
                     >
                       {STUDIO_PHONE}
@@ -72,7 +74,7 @@ export default function Contact() {
                   <div className="w-px h-full min-h-[20px] bg-gold/30 mt-1 flex-shrink-0" />
                   <div>
                     <div className="text-xs text-muted tracking-widest uppercase mb-1">WhatsApp</div>
-                    <a href={STUDIO_WHATSAPP} target="_blank" rel="noopener noreferrer" className="text-cream text-base hover:text-gold transition-colors">
+                    <a href={STUDIO_WHATSAPP} onClick={trackPhoneConversion} target="_blank" rel="noopener noreferrer" className="text-cream text-base hover:text-gold transition-colors">
                       {STUDIO_PHONE}
                     </a>
                   </div>
@@ -81,7 +83,7 @@ export default function Contact() {
                   <div className="w-px h-full min-h-[20px] bg-gold/30 mt-1 flex-shrink-0" />
                   <div>
                     <div className="text-xs text-muted tracking-widest uppercase mb-1">Viber</div>
-                    <a href={STUDIO_VIBER} className="text-cream text-base hover:text-gold transition-colors">
+                    <a href={STUDIO_VIBER} onClick={trackPhoneConversion} className="text-cream text-base hover:text-gold transition-colors">
                       {STUDIO_PHONE}
                     </a>
                   </div>
