@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { trackPhoneConversion, trackFormConversion } from "@/lib/gtag";
 import {
   STUDIO_PHONE,
@@ -18,6 +18,7 @@ export default function Contact() {
   const [sent, setSent] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+  const converted = useRef(false);
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -31,7 +32,10 @@ export default function Contact() {
       });
       if (!res.ok) throw new Error();
       setSent(true);
-      trackFormConversion();
+      if (!converted.current) {
+        converted.current = true;
+        trackFormConversion();
+      }
     } catch {
       setError("Slanje nije uspelo. Pokušajte ponovo ili nas kontaktirajte telefonom.");
     } finally {
