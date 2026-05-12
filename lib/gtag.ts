@@ -17,5 +17,6 @@ export function trackFormConversion() {
     send_to: "AW-18126386464/7yfuCL7BkKwcEKDqqsND",
     value: 1.0,
     currency: "RSD",
+    transaction_id: `form_${Date.now()}`,
   });
 }
