@@ -1,12 +1,15 @@
 import Image from "next/image";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import { buildMetadata } from "@/lib/metadata";
+import { SITE_URL } from "@/lib/constants";
 
-export const metadata = {
-  title: "Relaks masaža lica, vrata i dekoltea | Studio Revive Beograd",
+export const metadata = buildMetadata({
+  title: "Relaks masaža lica, vrata i dekoltea Beograd",
   description:
-    "Ritual opuštanja koji umiruje um, podstiče cirkulaciju i vraća koži svežinu i blistavost. Studio Revive Beograd.",
-};
+    "Ritual opuštanja koji umiruje um, podstiče cirkulaciju i vraća koži svežinu i blistavost. Nežni pokreti, limfna drenaža. Studio Revive Beograd.",
+  url: `${SITE_URL}/tretmani/relaks-masaza`,
+});
 
 const prednosti = [
   {

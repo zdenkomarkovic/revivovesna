@@ -1,12 +1,15 @@
 import Image from "next/image";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import { buildMetadata } from "@/lib/metadata";
+import { SITE_URL } from "@/lib/constants";
 
-export const metadata = {
-  title: "Tretmani | Studio Revive Beograd",
+export const metadata = buildMetadata({
+  title: "Tretmani",
   description:
-    "Moji tretmani poboljšavaju izgled i podižu samopouzdanje. PMU, tetovaže, uklanjanje tetovaža, tretmani lica i više — Studio Revive Beograd.",
-};
+    "PMU trajna šminka, tetovaže, lasersko uklanjanje, laserska epilacija, hydrafacial, lash & brow lift i tretmani lica u Beogradu — Studio Revive.",
+  url: `${SITE_URL}/tretmani`,
+});
 
 export default function TretmaniPage() {
   return (

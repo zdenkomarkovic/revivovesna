@@ -1,12 +1,15 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { GalleryRow } from "@/components/ui/GalleryRow";
+import { buildMetadata } from "@/lib/metadata";
+import { SITE_URL } from "@/lib/constants";
 
-export const metadata = {
-  title: "Galerija — Usne | Studio Revive Beograd",
+export const metadata = buildMetadata({
+  title: "Galerija — Trajna šminka usana Beograd",
   description:
-    "Galerija radova — trajna šminka usana. Studio Revive Beograd.",
-};
+    "Galerija radova trajne šminke usana — konture, akvarelne i puder usne. Studio Revive Beograd, Vesna Parojčić.",
+  url: `${SITE_URL}/galerija/usne`,
+});
 
 const images = [
   "IMG_9204-225x300.jpg",

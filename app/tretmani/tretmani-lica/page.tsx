@@ -1,12 +1,15 @@
 import Image from "next/image";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import { buildMetadata } from "@/lib/metadata";
+import { SITE_URL } from "@/lib/constants";
 
-export const metadata = {
-  title: "Tretmani lica | Studio Revive Beograd",
+export const metadata = buildMetadata({
+  title: "Tretmani lica Beograd — carbon peeling, hydrafacial",
   description:
     "Profesionalna nega lica — higijenski tretman, hydrafacial, masaža, carbon peeling i fitopiling. Prilagođeno vašem tipu kože. Studio Revive Beograd.",
-};
+  url: `${SITE_URL}/tretmani/tretmani-lica`,
+});
 
 const tretmani = [
   {

@@ -2,12 +2,15 @@ import Image from "next/image";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { GalleryRow } from "@/components/ui/GalleryRow";
+import { buildMetadata } from "@/lib/metadata";
+import { SITE_URL } from "@/lib/constants";
 
-export const metadata = {
-  title: "Edukacija — Puder obrve | Studio Revive Beograd",
+export const metadata = buildMetadata({
+  title: "Edukacija Puder Obrve — PMU kurs Beograd",
   description:
-    "Bazna obuka za trajnu šminku — puder obrve, usne, kapke i mini tattoo. Teorijski i praktični deo, sertifikat. Studio Revive Beograd.",
-};
+    "Bazna obuka za trajnu šminku — puder obrve, usne, kapke i mini tattoo. Teorijski i praktični deo, sertifikat. Vesna Parojčić Studio Revive Beograd.",
+  url: `${SITE_URL}/edukacije/puder-obrve`,
+});
 
 const obrveImages = [
   "IMG_4438-2-224x300.jpg",

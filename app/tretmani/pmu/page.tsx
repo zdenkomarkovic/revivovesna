@@ -2,6 +2,8 @@ import Image from "next/image";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { GalleryRow } from "@/components/ui/GalleryRow";
+import { buildMetadata } from "@/lib/metadata";
+import { SITE_URL } from "@/lib/constants";
 
 const obrveImages = [
   "IMG_4438-2-224x300.jpg","po-169x300.png","po-300x224.jpg",
@@ -31,11 +33,13 @@ const usneImages = [
   "IMG_0468-169x300.jpg",
 ];
 
-export const metadata = {
-  title: "PMU — Permanentni Make-up (trajna šminka) | Studio Revive Beograd",
+export const metadata = buildMetadata({
+  title: "PMU — Permanentni Make-up (trajna šminka)",
   description:
-    "Trajna šminka — mikropigmentacija na obrvama, očima i usnama. Dugotrajan, prirodan izgled bez svakodnevnog nanošenja šminke. Studio Revive Beograd.",
-};
+    "Trajna šminka — mikropigmentacija obrva, eyeliner i usana. Puder obrve, hairstroke, senčeni eyeliner. Dugotrajan prirodan izgled — Studio Revive Beograd.",
+  url: `${SITE_URL}/tretmani/pmu`,
+  image: "/pmu/po-r2t2ai07cftwxb6b8ns0uql76uvkzwpt8cl36ebmnk.png",
+});
 
 export default function PmuPage() {
   return (

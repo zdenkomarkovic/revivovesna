@@ -1,12 +1,15 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { GalleryRow } from "@/components/ui/GalleryRow";
+import { buildMetadata } from "@/lib/metadata";
+import { SITE_URL } from "@/lib/constants";
 
-export const metadata = {
-  title: "Galerija — Edukacije | Studio Revive Beograd",
+export const metadata = buildMetadata({
+  title: "Galerija edukacija PMU i mini tattoo Beograd",
   description:
-    "Galerija edukacija — PMU i mini tattoo obuke. Studio Revive Beograd.",
-};
+    "Galerija PMU i mini tattoo edukacija — radovi polaznika Vesne Parojčić. Studio Revive Beograd.",
+  url: `${SITE_URL}/galerija/edukacije`,
+});
 
 const images = [
   "IMG_0210-169x300.jpeg",

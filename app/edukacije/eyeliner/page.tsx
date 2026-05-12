@@ -2,12 +2,15 @@ import Image from "next/image";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { GalleryRow } from "@/components/ui/GalleryRow";
+import { buildMetadata } from "@/lib/metadata";
+import { SITE_URL } from "@/lib/constants";
 
-export const metadata = {
-  title: "Eyeliner Masterclass | Studio Revive Beograd",
+export const metadata = buildMetadata({
+  title: "Eyeliner Masterclass — PMU kurs Beograd",
   description:
-    "Masterclass za senčeni ajlajner — soft, bold i priprema za takmičenje. Unapredite svoje veštine uz profesionalnu obuku. Studio Revive Beograd.",
-};
+    "Masterclass za senčeni ajlajner — soft, bold i priprema za takmičenje. Unapredite veštine uz profesionalnu obuku. Studio Revive Beograd.",
+  url: `${SITE_URL}/edukacije/eyeliner`,
+});
 
 const ajlajnerImages = [
   "IMG_4564-1-224x300.png",

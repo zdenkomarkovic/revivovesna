@@ -2,6 +2,8 @@ import Image from "next/image";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { GalleryRow } from "@/components/ui/GalleryRow";
+import { buildMetadata } from "@/lib/metadata";
+import { SITE_URL } from "@/lib/constants";
 
 const edukacijeImages = [
   "puderobrva.png",
@@ -11,11 +13,12 @@ const edukacijeImages = [
   "minitattoo.jpg",
 ];
 
-export const metadata = {
-  title: "Edukacije | Studio Revive Beograd",
+export const metadata = buildMetadata({
+  title: "Edukacije PMU i Tattoo Beograd",
   description:
-    "Profesionalne edukacije za PMU i mini tattoo. Vesna Parojčić — internacionalna edukatorka sa 15+ godina iskustva. Individualno ili u malim grupama, sa sertifikatom.",
-};
+    "Profesionalne edukacije za PMU i mini tattoo u Beogradu. Vesna Parojčić — internacionalna edukatorka sa 15+ godina iskustva. Individualno ili u malim grupama, sa sertifikatom.",
+  url: `${SITE_URL}/edukacije`,
+});
 
 const kvaliteti = [
   {

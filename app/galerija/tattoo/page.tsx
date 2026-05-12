@@ -1,12 +1,15 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { GalleryRow } from "@/components/ui/GalleryRow";
+import { buildMetadata } from "@/lib/metadata";
+import { SITE_URL } from "@/lib/constants";
 
-export const metadata = {
-  title: "Galerija — Tattoo | Studio Revive Beograd",
+export const metadata = buildMetadata({
+  title: "Galerija tetovaža — Tattoo Studio Beograd",
   description:
-    "Galerija tattoo radova — mini tattoo i tetovaže. Studio Revive Beograd.",
-};
+    "Galerija tattoo radova — mini tattoo i tetovaže. Pogledajte radove Vesne Parojčić — Studio Revive Beograd.",
+  url: `${SITE_URL}/galerija/tattoo`,
+});
 
 const images = [
   "IMG_0205-169x300.jpg",

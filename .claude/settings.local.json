@@ -10,7 +10,9 @@
       "PowerShell(Get-ChildItem \"E:\\\\Sajtovi\\\\vesnarevivo\\\\components\" -Recurse -Force | ForEach-Object { $_.FullName })",
       "PowerShell(Get-ChildItem \"E:\\\\Sajtovi\\\\vesnarevivo\\\\public\" -Force | ForEach-Object { $_.Name })",
       "PowerShell(Get-ChildItem \"E:\\\\Sajtovi\\\\vesnarevivo\\\\app\" -Force | ForEach-Object { $_.Name })",
-      "WebSearch"
+      "WebSearch",
+      "Bash(npx tsc *)",
+      "Bash(npx next *)"
     ]
   }
 }

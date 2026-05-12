@@ -1,12 +1,15 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { GalleryRow } from "@/components/ui/GalleryRow";
+import { buildMetadata } from "@/lib/metadata";
+import { SITE_URL } from "@/lib/constants";
 
-export const metadata = {
-  title: "Galerija — Ajlajner | Studio Revive Beograd",
+export const metadata = buildMetadata({
+  title: "Galerija — Trajni eyeliner ajlajner Beograd",
   description:
-    "Galerija radova — trajni eyeliner. Studio Revive Beograd.",
-};
+    "Galerija radova trajnog eyelinera — soft, bold, senčeni ajlajner. Studio Revive Beograd, Vesna Parojčić.",
+  url: `${SITE_URL}/galerija/ajlajner`,
+});
 
 const images = [
   "IMG_0313-224x300.jpeg",

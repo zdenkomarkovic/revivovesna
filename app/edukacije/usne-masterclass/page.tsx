@@ -2,12 +2,15 @@ import Image from "next/image";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { GalleryRow } from "@/components/ui/GalleryRow";
+import { buildMetadata } from "@/lib/metadata";
+import { SITE_URL } from "@/lib/constants";
 
-export const metadata = {
-  title: "Usne Masterclass — Trajna šminka | Studio Revive Beograd",
+export const metadata = buildMetadata({
+  title: "Usne Masterclass — trajna šminka usana kurs",
   description:
     "Masterclass za trajnu šminku usana — autorska tehnika, korejski/evropski mix, brz i precizan rad. Dostupno i online. Studio Revive Beograd.",
-};
+  url: `${SITE_URL}/edukacije/usne-masterclass`,
+});
 
 const usneImages = [
   "IMG_9204-225x300.jpg","IMG_9016-225x300.jpg","IMG_9031-225x300.jpeg",

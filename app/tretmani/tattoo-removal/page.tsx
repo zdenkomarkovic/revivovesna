@@ -1,12 +1,15 @@
 import Image from "next/image";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import { buildMetadata } from "@/lib/metadata";
+import { SITE_URL } from "@/lib/constants";
 
-export const metadata = {
-  title: "Lasersko skidanje tetovaža | Studio Revive Beograd",
+export const metadata = buildMetadata({
+  title: "Lasersko uklanjanje tetovaža Beograd",
   description:
-    "Lasersko skidanje tetovaža i obrva — precizna, minimalno invazivna metoda uz nd yag Q switch tehnologiju. Studio Revive Beograd.",
-};
+    "Lasersko skidanje tetovaža i obrva laserom — precizna, minimalno invazivna metoda uz nd yag Q switch tehnologiju. Studio Revive Beograd.",
+  url: `${SITE_URL}/tretmani/tattoo-removal`,
+});
 
 const prednosti = [
   {

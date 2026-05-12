@@ -1,12 +1,15 @@
 import Image from "next/image";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import { buildMetadata } from "@/lib/metadata";
+import { SITE_URL } from "@/lib/constants";
 
-export const metadata = {
-  title: "Hydrafacial — Hollywood Glow | Studio Revive Beograd",
+export const metadata = buildMetadata({
+  title: "Hydrafacial Hollywood Glow Beograd",
   description:
     "Hydrafacial — neinvazivan tretman dubokog čišćenja, hidratacije i osveženja lica. Rezultati vidljivi nakon prvog tretmana. Studio Revive Beograd.",
-};
+  url: `${SITE_URL}/tretmani/hydrafacial`,
+});
 
 const efekti = [
   "Poboljšava teksturu kože",

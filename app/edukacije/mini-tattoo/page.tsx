@@ -2,6 +2,8 @@ import Image from "next/image";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { GalleryRow } from "@/components/ui/GalleryRow";
+import { buildMetadata } from "@/lib/metadata";
+import { SITE_URL } from "@/lib/constants";
 
 const tattooImages = [
   "IMG_0205-169x300.jpg","IMG_0648-169x300.jpg","IMG_1804-225x300.jpg",
@@ -12,11 +14,12 @@ const tattooImages = [
   "gb-1-225x300.jpg",
 ];
 
-export const metadata = {
-  title: "Mini Tattoo Edukacija za PMU Artiste | Studio Revive Beograd",
+export const metadata = buildMetadata({
+  title: "Mini Tattoo edukacija za PMU artiste Beograd",
   description:
     "Edukacija za mini tattoo namenjena PMU artistima — teorija, rad sa modelima, sertifikat. Proširite svoje usluge. Studio Revive Beograd.",
-};
+  url: `${SITE_URL}/edukacije/mini-tattoo`,
+});
 
 const program = [
   {

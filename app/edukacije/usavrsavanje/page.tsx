@@ -1,12 +1,15 @@
 import Image from "next/image";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import { buildMetadata } from "@/lib/metadata";
+import { SITE_URL } from "@/lib/constants";
 
-export const metadata = {
-  title: "Usavršavanje — Trajna šminka i tetoviranje | Studio Revive Beograd",
+export const metadata = buildMetadata({
+  title: "Usavršavanje trajne šminke — napredni PMU kurs",
   description:
     "Napredne tehnike trajne šminke i tetoviranja — hairstroke, ombré, eyeliner, usne, korekcija. Sertifikat po završetku. Studio Revive Beograd.",
-};
+  url: `${SITE_URL}/edukacije/usavrsavanje`,
+});
 
 const razlozi = [
   {

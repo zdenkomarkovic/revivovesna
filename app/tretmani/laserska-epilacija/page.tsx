@@ -1,12 +1,15 @@
 import Image from "next/image";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import { buildMetadata } from "@/lib/metadata";
+import { SITE_URL } from "@/lib/constants";
 
-export const metadata = {
-  title: "Laserska epilacija diodnim laserom | Studio Revive Beograd",
+export const metadata = buildMetadata({
+  title: "Laserska epilacija diodnim laserom Beograd",
   description:
     "Laserska epilacija diodnim laserom — trajno smanjenje rasta dlačica, sigurno i bezbolno za sve tipove kože. Studio Revive Beograd.",
-};
+  url: `${SITE_URL}/tretmani/laserska-epilacija`,
+});
 
 const prednosti = [
   {

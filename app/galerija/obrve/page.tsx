@@ -1,12 +1,15 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { GalleryRow } from "@/components/ui/GalleryRow";
+import { buildMetadata } from "@/lib/metadata";
+import { SITE_URL } from "@/lib/constants";
 
-export const metadata = {
-  title: "Galerija — Puder obrve | Studio Revive Beograd",
+export const metadata = buildMetadata({
+  title: "Galerija — Puder obrve trajna šminka Beograd",
   description:
-    "Galerija radova — puder obrve trajna šminka. Studio Revive Beograd.",
-};
+    "Galerija radova puder obrva i hairstroke tehnika. Rezultati trajne šminke obrva — Studio Revive Beograd, Vesna Parojčić.",
+  url: `${SITE_URL}/galerija/obrve`,
+});
 
 const images = [
   "IMG_4438-2-224x300.jpg",

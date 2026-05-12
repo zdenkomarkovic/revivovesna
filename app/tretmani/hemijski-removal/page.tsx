@@ -1,12 +1,15 @@
 import Image from "next/image";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import { buildMetadata } from "@/lib/metadata";
+import { SITE_URL } from "@/lib/constants";
 
-export const metadata = {
-  title: "Hemijski removal voćnim kiselinama | Studio Revive Beograd",
+export const metadata = buildMetadata({
+  title: "Hemijski removal voćnim kiselinama Beograd",
   description:
-    "Hemijski removal obrva i tetovaža pomoću voćnih kiselina — sigurna i prirodna alternativa laseru. Studio Revive Beograd.",
-};
+    "Hemijski removal obrva i tetovaža pomoću voćnih kiselina — sigurna i prirodna alternativa laseru. Uklanjanje pigmenata koje laser ne može. Studio Revive Beograd.",
+  url: `${SITE_URL}/tretmani/hemijski-removal`,
+});
 
 type Tacka = { title: string; text: string };
 type Sekcija = { broj: string; naslov: string; tekst?: string; tacke?: Tacka[] };

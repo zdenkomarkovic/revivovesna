@@ -1,12 +1,15 @@
 import Image from "next/image";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import { buildMetadata } from "@/lib/metadata";
+import { SITE_URL } from "@/lib/constants";
 
-export const metadata = {
-  title: "Lash & Brow Lift | Studio Revive Beograd",
+export const metadata = buildMetadata({
+  title: "Lash Lift i Brow Lift Beograd",
   description:
-    "Lash lift i brow lift tretmani — prirodno podignute, definisane i negovane trepavice i obrve. Studio Revive Beograd.",
-};
+    "Lash lift i brow lift tretmani — prirodno podignute, definisane i negovane trepavice i obrve. Dugotrajan efekat bez maskare. Studio Revive Beograd.",
+  url: `${SITE_URL}/tretmani/lash-brow-lift`,
+});
 
 const tretmani = [
   {
