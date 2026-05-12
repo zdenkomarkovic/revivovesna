@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { trackPhoneConversion } from "@/lib/gtag";
+import { trackPhoneConversion, trackFormConversion } from "@/lib/gtag";
 import {
   STUDIO_PHONE,
   STUDIO_EMAIL,
@@ -16,15 +16,27 @@ import {
 export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [sent, setSent] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    const subject = encodeURIComponent(`Upit od ${form.name} — Studio Revive`);
-    const body = encodeURIComponent(
-      `Ime: ${form.name}\nEmail: ${form.email}\n\nPoruka:\n${form.message}`
-    );
-    window.location.href = `mailto:${STUDIO_EMAIL}?subject=${subject}&body=${body}`;
-    setSent(true);
+    setLoading(true);
+    setError("");
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      if (!res.ok) throw new Error();
+      setSent(true);
+      trackFormConversion();
+    } catch {
+      setError("Slanje nije uspelo. Pokušajte ponovo ili nas kontaktirajte telefonom.");
+    } finally {
+      setLoading(false);
+    }
   }
 
   return (
@@ -157,8 +169,8 @@ export default function Contact() {
                   Hvala vam!
                 </div>
                 <p className="text-muted text-base">
-                  Vaš podrazumevani email klijent je otvoren. Pošaljite poruku i
-                  odgovorićemo u najkraćem roku.
+                  Poruka je uspešno poslata.
+                  Odgovorićemo u najkraćem roku.
                 </p>
                 <button
                   onClick={() => setSent(false)}
@@ -210,10 +222,14 @@ export default function Contact() {
                 </div>
                 <button
                   type="submit"
-                  className="w-full bg-gold text-dark text-sm tracking-[0.2em] uppercase font-medium py-4 hover:bg-gold-light transition-colors duration-200"
+                  disabled={loading}
+                  className="w-full bg-gold text-dark text-sm tracking-[0.2em] uppercase font-medium py-4 hover:bg-gold-light transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  Pošaljite poruku
+                  {loading ? "Slanje..." : "Pošaljite poruku"}
                 </button>
+                {error && (
+                  <p className="text-red-400/80 text-sm text-center">{error}</p>
+                )}
                 <p className="text-muted/50 text-sm text-center">
                   Odgovaramo u roku od 24 sata
                 </p>

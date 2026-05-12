@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Navbar from "@/components/layout/Navbar";
-import { trackPhoneConversion } from "@/lib/gtag";
+import { trackPhoneConversion, trackFormConversion } from "@/lib/gtag";
 import Footer from "@/components/layout/Footer";
 import {
   STUDIO_PHONE,
@@ -16,17 +16,29 @@ import {
 } from "@/lib/constants";
 
 export default function KontaktPage() {
-  const [form, setForm] = useState({ name: "", email: "", phone: "", service: "", message: "" });
+  const [form, setForm] = useState({ name: "", email: "", phone: "", message: "" });
   const [sent, setSent] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    const subject = encodeURIComponent(`Upit od ${form.name} — Studio Revive`);
-    const body = encodeURIComponent(
-      `Ime: ${form.name}\nEmail: ${form.email}\nTelefon: ${form.phone}\nUsluga: ${form.service}\n\nPoruka:\n${form.message}`
-    );
-    window.location.href = `mailto:${STUDIO_EMAIL}?subject=${subject}&body=${body}`;
-    setSent(true);
+    setLoading(true);
+    setError("");
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      if (!res.ok) throw new Error();
+      setSent(true);
+      trackFormConversion();
+    } catch {
+      setError("Slanje nije uspelo. Pokušajte ponovo ili nas kontaktirajte telefonom.");
+    } finally {
+      setLoading(false);
+    }
   }
 
   const inputClass =
@@ -167,11 +179,11 @@ export default function KontaktPage() {
                 <div className="space-y-2 text-sm text-muted">
                   <div className="flex justify-between">
                     <span>Ponedeljak — Petak</span>
-                    <span className="text-cream">po dogovoru</span>
+                    <span className="text-cream">12:00 — 18:00</span>
                   </div>
                   <div className="flex justify-between">
                     <span>Subota</span>
-                    <span className="text-cream">po dogovoru</span>
+                    <span className="text-cream">na zakazivanje</span>
                   </div>
                   <div className="flex justify-between">
                     <span>Nedelja</span>
@@ -190,7 +202,7 @@ export default function KontaktPage() {
                     Hvala vam!
                   </div>
                   <p className="text-muted text-base max-w-sm">
-                    Vaš podrazumevani email klijent je otvoren sa popunjenim podacima.
+                    Poruka je uspešno poslata.
                     Odgovorićemo u najkraćem roku.
                   </p>
                   <button
@@ -237,23 +249,6 @@ export default function KontaktPage() {
                     />
                   </div>
                   <div>
-                    <label className={labelClass}>Usluga koja vas zanima</label>
-                    <select
-                      value={form.service}
-                      onChange={(e) => setForm({ ...form, service: e.target.value })}
-                      className={`${inputClass} cursor-pointer`}
-                    >
-                      <option value="">Izaberite uslugu...</option>
-                      <option>Permanentni Make-up — Obrve</option>
-                      <option>Permanentni Make-up — Usne</option>
-                      <option>Permanentni Make-up — Eyeliner</option>
-                      <option>Tetovaža</option>
-                      <option>Laser uklanjanje</option>
-                      <option>Edukacija / Trening</option>
-                      <option>Konsultacija</option>
-                    </select>
-                  </div>
-                  <div>
                     <label className={labelClass}>Poruka</label>
                     <textarea
                       rows={6}
@@ -265,10 +260,14 @@ export default function KontaktPage() {
                   </div>
                   <button
                     type="submit"
-                    className="w-full bg-gold text-dark text-sm tracking-[0.2em] uppercase font-medium py-4 hover:bg-gold-light transition-colors duration-200"
+                    disabled={loading}
+                    className="w-full bg-gold text-dark text-sm tracking-[0.2em] uppercase font-medium py-4 hover:bg-gold-light transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
                   >
-                    Pošaljite poruku
+                    {loading ? "Slanje..." : "Pošaljite poruku"}
                   </button>
+                  {error && (
+                    <p className="text-red-400/80 text-sm text-center">{error}</p>
+                  )}
                   <p className="text-muted/50 text-sm text-center">
                     Odgovaramo u roku od 24 sata
                   </p>
