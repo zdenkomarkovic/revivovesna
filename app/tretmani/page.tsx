@@ -377,6 +377,187 @@ export default function TretmaniPage() {
           </div>
         </div>
 
+        <div className="w-full h-px bg-border" />
+
+        {/* INDIBA */}
+        <div className="bg-dark-2">
+          <div className="max-w-7xl mx-auto px-6 lg:px-10 py-20">
+            <div className="grid lg:grid-cols-2 gap-16 items-center">
+              <div className="order-2 lg:order-1">
+                <span className="text-gold text-xs tracking-[0.3em] uppercase">Tretmani tela</span>
+                <h2 className="font-serif text-4xl lg:text-5xl text-cream font-light mt-3 mb-6 leading-tight">
+                  INDIBA tretmani
+                </h2>
+                <div className="w-8 h-px bg-gold mb-8" />
+                <p className="text-muted text-base leading-7 mb-10">
+                  INDIBA koristi jedinstvenu radiofrekventnu tehnologiju od 448kHz koja stimuliše
+                  cirkulaciju, proizvodnju kolagena i obnovu ćelija — bez invazivnih procedura.
+                  Idealni za zatezanje kože, lifting lica i regeneraciju nakon estetskih tretmana.
+                </p>
+                <a
+                  href="/tretmani/indiba"
+                  className="inline-flex items-center gap-3 border border-gold/40 text-gold text-xs tracking-[0.2em] uppercase px-6 py-3 hover:bg-gold hover:text-dark hover:border-gold transition-all duration-200"
+                >
+                  Saznaj više
+                  <span className="w-6 h-px bg-current" />
+                </a>
+              </div>
+              <div className="relative aspect-[4/3] overflow-hidden order-1 lg:order-2">
+                <Image
+                  src="/tretmani/indiba.jpg"
+                  alt="INDIBA tretmani — Regeneracija i obnova kože"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="w-full h-px bg-border" />
+
+        {/* Anticelulit masaže i limfna drenaža */}
+        <div className="max-w-7xl mx-auto px-6 lg:px-10 py-20">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="relative aspect-[4/3] overflow-hidden">
+              <Image
+                src="/tretmani/anticelulit-masaze.jpg"
+                alt="Anticelulit masaže i limfna drenaža"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div>
+              <span className="text-gold text-xs tracking-[0.3em] uppercase">Tretmani tela</span>
+              <h2 className="font-serif text-4xl lg:text-5xl text-cream font-light mt-3 mb-6 leading-tight">
+                Anticelulit masaže <span className="text-muted text-2xl lg:text-3xl">i limfna drenaža</span>
+              </h2>
+              <div className="w-8 h-px bg-gold mb-8" />
+              <p className="text-muted text-base leading-7 mb-10">
+                Anticelulit masaže i limfna drenaža pomažu u smanjenju zadržavanja tečnosti,
+                poboljšanju cirkulacije i vidljivom zaglađivanju kože — uz osećaj lakoće i
+                rasterećenja tela.
+              </p>
+              <a
+                href="/tretmani/anticelulit-masaze"
+                className="inline-flex items-center gap-3 border border-gold/40 text-gold text-xs tracking-[0.2em] uppercase px-6 py-3 hover:bg-gold hover:text-dark hover:border-gold transition-all duration-200"
+              >
+                Saznaj više
+                <span className="w-6 h-px bg-current" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="w-full h-px bg-border" />
+
+        {/* Kavitacija */}
+        <div className="bg-dark-2">
+          <div className="max-w-7xl mx-auto px-6 lg:px-10 py-20">
+            <div className="grid lg:grid-cols-2 gap-16 items-center">
+              <div className="order-2 lg:order-1">
+                <span className="text-gold text-xs tracking-[0.3em] uppercase">Tretmani tela</span>
+                <h2 className="font-serif text-4xl lg:text-5xl text-cream font-light mt-3 mb-6 leading-tight">
+                  Kavitacija
+                </h2>
+                <div className="w-8 h-px bg-gold mb-8" />
+                <p className="text-muted text-base leading-7 mb-10">
+                  Savremeni, neinvazivan tretman koji koristi ultrazvučne talase za smanjenje
+                  lokalizovanih masnih naslaga i redefinisanje kontura tela. Bezbolan, bez
+                  oporavka, sa vidljivim rezultatima.
+                </p>
+                <a
+                  href="/tretmani/kavitacija"
+                  className="inline-flex items-center gap-3 border border-gold/40 text-gold text-xs tracking-[0.2em] uppercase px-6 py-3 hover:bg-gold hover:text-dark hover:border-gold transition-all duration-200"
+                >
+                  Saznaj više
+                  <span className="w-6 h-px bg-current" />
+                </a>
+              </div>
+              <div className="relative aspect-[4/3] overflow-hidden order-1 lg:order-2">
+                <Image
+                  src="/tretmani/kavitacija.jpg"
+                  alt="Kavitacija — Neinvazivno oblikovanje tela"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="w-full h-px bg-border" />
+
+        {/* Presoterapija */}
+        <div className="max-w-7xl mx-auto px-6 lg:px-10 py-20">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="relative aspect-[4/3] overflow-hidden">
+              <Image
+                src="/tretmani/presoterapija.jpg"
+                alt="Presoterapija — Detoks i limfna drenaža"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div>
+              <span className="text-gold text-xs tracking-[0.3em] uppercase">Tretmani tela</span>
+              <h2 className="font-serif text-4xl lg:text-5xl text-cream font-light mt-3 mb-6 leading-tight">
+                Presoterapija
+              </h2>
+              <div className="w-8 h-px bg-gold mb-8" />
+              <p className="text-muted text-base leading-7 mb-10">
+                Efikasan tretman limfne drenaže koji pomoću kontrolisanog pritiska stimuliše
+                cirkulaciju, smanjuje otoke i pruža osećaj lakoće u telu. Idealan za usporenu
+                cirkulaciju i zadržavanje tečnosti.
+              </p>
+              <a
+                href="/tretmani/presoterapija"
+                className="inline-flex items-center gap-3 border border-gold/40 text-gold text-xs tracking-[0.2em] uppercase px-6 py-3 hover:bg-gold hover:text-dark hover:border-gold transition-all duration-200"
+              >
+                Saznaj više
+                <span className="w-6 h-px bg-current" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="w-full h-px bg-border" />
+
+        {/* EMS Sculpt Tesla */}
+        <div className="bg-dark-2">
+          <div className="max-w-7xl mx-auto px-6 lg:px-10 py-20">
+            <div className="grid lg:grid-cols-2 gap-16 items-center">
+              <div className="order-2 lg:order-1">
+                <span className="text-gold text-xs tracking-[0.3em] uppercase">Tretmani tela</span>
+                <h2 className="font-serif text-4xl lg:text-5xl text-cream font-light mt-3 mb-6 leading-tight">
+                  EMS Sculpt Tesla
+                </h2>
+                <div className="w-8 h-px bg-gold mb-8" />
+                <p className="text-muted text-base leading-7 mb-10">
+                  Napredni tretman koji koristi elektromagnetnu stimulaciju visokog intenziteta
+                  za definisanje mišića, oblikovanje tela i smanjenje masnih naslaga — bez
+                  napornih treninga i invazivnih procedura.
+                </p>
+                <a
+                  href="/tretmani/ems-sculpt"
+                  className="inline-flex items-center gap-3 border border-gold/40 text-gold text-xs tracking-[0.2em] uppercase px-6 py-3 hover:bg-gold hover:text-dark hover:border-gold transition-all duration-200"
+                >
+                  Saznaj više
+                  <span className="w-6 h-px bg-current" />
+                </a>
+              </div>
+              <div className="relative aspect-[4/3] overflow-hidden order-1 lg:order-2">
+                <Image
+                  src="/tretmani/ems-sculpt.jpg"
+                  alt="EMS Sculpt Tesla — Oblikovanje tela i jačanje mišića"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
 
       </main>
       <Footer />

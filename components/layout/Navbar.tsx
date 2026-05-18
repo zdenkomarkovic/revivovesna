@@ -37,6 +37,11 @@ const tretmaniLinks = [
   { href: "/tretmani/lash-brow-lift", label: "Lash & Brow Lift" },
   { href: "/tretmani/hydrafacial", label: "Hydrafacial" },
   { href: "/tretmani/relaks-masaza", label: "Relaks masaža lica" },
+  { href: "/tretmani/indiba", label: "INDIBA tretmani" },
+  { href: "/tretmani/anticelulit-masaze", label: "Anticelulit masaže i limfna drenaža" },
+  { href: "/tretmani/kavitacija", label: "Kavitacija" },
+  { href: "/tretmani/presoterapija", label: "Presoterapija" },
+  { href: "/tretmani/ems-sculpt", label: "EMS Sculpt Tesla" },
 ];
 
 export default function Navbar() {
@@ -118,7 +123,7 @@ export default function Navbar() {
                 <path d="M1 3l4 4 4-4" />
               </svg>
             </button>
-            <div className={`absolute top-full left-1/2 -translate-x-1/2 mt-4 w-64 bg-dark-2 border border-border transition-all duration-200 ${
+            <div className={`absolute top-full left-1/2 -translate-x-1/2 mt-4 w-72 bg-dark-2 border border-border transition-all duration-200 ${
               dropdownOpen ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 -translate-y-2 pointer-events-none"
             }`}>
               {tretmaniLinks.map(({ href, label }, i) => (
@@ -236,7 +241,7 @@ export default function Navbar() {
       {/* Mobile menu */}
       <div
         className={`lg:hidden overflow-hidden transition-all duration-300 ${
-          isOpen ? "max-h-[600px]" : "max-h-0"
+          isOpen ? "max-h-[900px]" : "max-h-0"
         }`}
       >
         <div className="bg-dark-2 border-t border-border px-6 py-6 flex flex-col gap-1">
@@ -272,7 +277,7 @@ export default function Navbar() {
             </button>
             <div
               className={`overflow-hidden transition-all duration-200 ${
-                mobileSubmenuOpen ? "max-h-96" : "max-h-0"
+                mobileSubmenuOpen ? "max-h-[500px]" : "max-h-0"
               }`}
             >
               {tretmaniLinks.map(({ href, label }, i) => (
