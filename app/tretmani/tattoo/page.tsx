@@ -4,28 +4,7 @@ import Footer from "@/components/layout/Footer";
 import { GalleryRow } from "@/components/ui/GalleryRow";
 import { buildMetadata } from "@/lib/metadata";
 import { SITE_URL } from "@/lib/constants";
-
-const tattooImages = [
-  "IMG_0205.JPG",
-  "IMG_0648.JPG",
-  "IMG_1804.JPG",
-  "IMG_1805.JPG",
-  "IMG_1806.JPG",
-  "IMG_3849.JPG",
-  "IMG_3855.JPG",
-  "IMG_3857.JPG",
-  "IMG_3859.JPG",
-  "IMG_3860.JPG",
-  "IMG_4849.JPG",
-  "IMG_6238.JPG",
-  "IMG_6528.JPG",
-  "IMG_6572.JPG",
-  "IMG_6573.JPG",
-  "IMG_6574.JPG",
-  "IMG_6770.JPG",
-  "IMG_7474 (1).JPG",
-  "IMG_9189 (1).JPG",
-];
+import { tattooImages } from "@/lib/gallery-data";
 
 export const metadata = buildMetadata({
   title: "Tetovaže — Tattoo Studio Beograd",

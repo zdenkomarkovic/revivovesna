@@ -3,6 +3,7 @@ import Footer from "@/components/layout/Footer";
 import { GalleryRow } from "@/components/ui/GalleryRow";
 import { buildMetadata } from "@/lib/metadata";
 import { SITE_URL } from "@/lib/constants";
+import { obrveImages } from "@/lib/gallery-data";
 
 export const metadata = buildMetadata({
   title: "Galerija — Puder obrve trajna šminka Beograd",
@@ -10,23 +11,6 @@ export const metadata = buildMetadata({
     "Galerija radova puder obrva i hairstroke tehnika. Rezultati trajne šminke obrva — Studio Revive Beograd, Vesna Parojčić.",
   url: `${SITE_URL}/galerija/obrve`,
 });
-
-const images = [
-  "IMG_4438-2-224x300.jpg",
-  "IMG_5035-300x225.jpg",
-  "obrve10-169x300.jpeg",
-  "obrve11-300x300.jpg",
-  "obrve2-169x300.jpg",
-  "obrve-300x169.jpg",
-  "obrve3-169x300.jpg",
-  "obrve4-169x300.jpg",
-  "obrve5-169x300.jpg",
-  "obrve6-169x300.jpg",
-  "obrve7-169x300.jpeg",
-  "obrve9-169x300.jpg",
-  "po-169x300.png",
-  "po-300x224.jpg",
-];
 
 export default function GalerijaObrvePage() {
   return (
@@ -46,7 +30,7 @@ export default function GalerijaObrvePage() {
         <div className="w-full h-px bg-border" />
 
         <div className="max-w-7xl mx-auto px-6 lg:px-10 py-20">
-          <GalleryRow folder="obrve" images={images} alt="Puder obrve — Studio Revive Beograd" />
+          <GalleryRow folder="obrve" images={obrveImages} alt="Puder obrve — Studio Revive Beograd" />
         </div>
       </main>
       <Footer />

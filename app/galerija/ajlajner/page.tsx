@@ -3,6 +3,7 @@ import Footer from "@/components/layout/Footer";
 import { GalleryRow } from "@/components/ui/GalleryRow";
 import { buildMetadata } from "@/lib/metadata";
 import { SITE_URL } from "@/lib/constants";
+import { ajlajnerImages } from "@/lib/gallery-data";
 
 export const metadata = buildMetadata({
   title: "Galerija — Trajni eyeliner ajlajner Beograd",
@@ -10,19 +11,6 @@ export const metadata = buildMetadata({
     "Galerija radova trajnog eyelinera — soft, bold, senčeni ajlajner. Studio Revive Beograd, Vesna Parojčić.",
   url: `${SITE_URL}/galerija/ajlajner`,
 });
-
-const images = [
-  "IMG_0313.JPEG",
-  "IMG_1037.PNG",
-  "IMG_1376.JPEG",
-  "IMG_4548.JPEG",
-  "IMG_5307.JPG",
-  "IMG_6692.JPG",
-  "IMG_7409.PNG",
-  "IMG_9060.JPEG",
-  "IMG_9202.JPEG",
-  "IMG_9298.JPG",
-];
 
 export default function GalerijaAjlajnerPage() {
   return (
@@ -42,7 +30,7 @@ export default function GalerijaAjlajnerPage() {
         <div className="w-full h-px bg-border" />
 
         <div className="max-w-7xl mx-auto px-6 lg:px-10 py-20">
-          <GalleryRow folder="ajlajner" images={images} alt="Trajni eyeliner — Studio Revive Beograd" />
+          <GalleryRow folder="ajlajner" images={ajlajnerImages} alt="Trajni eyeliner — Studio Revive Beograd" />
         </div>
       </main>
       <Footer />

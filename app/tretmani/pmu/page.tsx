@@ -4,34 +4,7 @@ import Footer from "@/components/layout/Footer";
 import { GalleryRow } from "@/components/ui/GalleryRow";
 import { buildMetadata } from "@/lib/metadata";
 import { SITE_URL } from "@/lib/constants";
-
-const obrveImages = [
-  "IMG_4438-2-224x300.jpg","po-169x300.png","po-300x224.jpg",
-  "IMG_5035-300x225.jpg","obrve-300x169.jpg","obrve2-169x300.jpg",
-  "obrve3-169x300.jpg","obrve4-169x300.jpg","obrve5-169x300.jpg",
-  "obrve6-169x300.jpg","obrve7-169x300.jpeg","obrve9-169x300.jpg",
-  "obrve10-169x300.jpeg","obrve11-300x300.jpg",
-];
-
-const ajlajnerImages = [
-  "IMG_4564-1-224x300.png","IMG_4484-1-169x300.png","IMG_4456-1-169x300.png",
-  "IMG_4455-1-224x300.jpg","IMG_4351-1-169x300.jpg","IMG_4265-1-224x300.png",
-  "IMG_4262-1-224x300.png","IMG_4222-1-222x300.jpg","IMG_4060-1-224x300.png",
-  "IMG_3820-1-224x300.png","IMG_9202-225x300.jpeg","IMG_9060-224x300.jpeg",
-  "IMG_5067-300x225.jpg","IMG_4548-224x300.jpeg","IMG_4352-300x212.jpg",
-  "IMG_1376-169x300.jpeg","IMG_1037-224x300.jpg","IMG_0313-224x300.jpeg",
-];
-
-const usneImages = [
-  "IMG_9204-225x300.jpg","IMG_9016-225x300.jpg","IMG_9031-225x300.jpeg",
-  "IMG_8878-224x300.jpeg","IMG_8713-169x300.jpg","IMG_8666-225x300.jpg",
-  "IMG_8575-169x300.jpg","IMG_8572-169x300.jpg","IMG_8495-224x300.jpeg",
-  "IMG_7204-224x300.jpg","IMG_5237-300x300.jpg","IMG_5219-169x300.jpeg",
-  "IMG_4939-263x300.jpg","IMG_5022-135x300.jpeg","IMG_4555-242x300.jpg",
-  "IMG_4250-169x300.jpg","IMG_3710-224x300.jpg","IMG_3521-169x300.jpg",
-  "IMG_1499-224x300.jpeg","IMG_0995-193x300.jpg","IMG_0903-222x300.jpg",
-  "IMG_0468-169x300.jpg",
-];
+import { obrveImages, ajlajnerImages, usneImages } from "@/lib/gallery-data";
 
 export const metadata = buildMetadata({
   title: "PMU — Permanentni Make-up (trajna šminka)",
