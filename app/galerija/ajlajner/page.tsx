@@ -12,24 +12,16 @@ export const metadata = buildMetadata({
 });
 
 const images = [
-  "IMG_0313-224x300.jpeg",
-  "IMG_1037-224x300.jpg",
-  "IMG_1376-169x300.jpeg",
-  "IMG_3820-1-224x300.png",
-  "IMG_4060-1-224x300.png",
-  "IMG_4222-1-222x300.jpg",
-  "IMG_4262-1-224x300.png",
-  "IMG_4265-1-224x300.png",
-  "IMG_4351-1-169x300.jpg",
-  "IMG_4352-300x212.jpg",
-  "IMG_4455-1-224x300.jpg",
-  "IMG_4456-1-169x300.png",
-  "IMG_4484-1-169x300.png",
-  "IMG_4548-224x300.jpeg",
-  "IMG_4564-1-224x300.png",
-  "IMG_5067-300x225.jpg",
-  "IMG_9060-224x300.jpeg",
-  "IMG_9202-225x300.jpeg",
+  "IMG_0313.JPEG",
+  "IMG_1037.PNG",
+  "IMG_1376.JPEG",
+  "IMG_4548.JPEG",
+  "IMG_5307.JPG",
+  "IMG_6692.JPG",
+  "IMG_7409.PNG",
+  "IMG_9060.JPEG",
+  "IMG_9202.JPEG",
+  "IMG_9298.JPG",
 ];
 
 export default function GalerijaAjlajnerPage() {
