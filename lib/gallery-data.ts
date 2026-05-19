@@ -59,6 +59,26 @@ export const usneImages = [
   "IMG_0310.PNG",
 ];
 
+export const laserskoskidanjeImages = [
+  "IMG_0062.PNG",
+  "IMG_0643.JPG",
+  "IMG_0644.JPG",
+  "IMG_0896.JPG",
+  "IMG_1367 (1).JPG",
+  "IMG_1368.JPG",
+  "IMG_1575.JPG",
+  "IMG_2338.JPG",
+  "IMG_3589.JPG",
+  "IMG_3891.JPG",
+  "IMG_5350.JPG",
+  "IMG_6950.JPG",
+  "IMG_7498.JPG",
+  "IMG_8496.JPG",
+  "IMG_8498.PNG",
+  "IMG_8507.PNG",
+  "IMG_9337.PNG",
+];
+
 export const tattooImages = [
   "IMG_0205.JPG",
   "IMG_0648.JPG",

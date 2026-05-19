@@ -14,6 +14,7 @@ const galerijаLinks = [
   { href: "/galerija/ajlajner", label: "Ajlajner" },
   { href: "/galerija/usne", label: "Usne" },
   { href: "/galerija/tattoo", label: "Tattoo" },
+  { href: "/galerija/laserskoskidanje", label: "Lasersko skidanje" },
   { href: "/galerija/edukacije", label: "Edukacije" },
 ];
 

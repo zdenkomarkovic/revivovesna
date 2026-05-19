@@ -1,8 +1,10 @@
 import Image from "next/image";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import { GalleryRow } from "@/components/ui/GalleryRow";
 import { buildMetadata } from "@/lib/metadata";
 import { SITE_URL } from "@/lib/constants";
+import { laserskoskidanjeImages } from "@/lib/gallery-data";
 
 export const metadata = buildMetadata({
   title: "Lasersko uklanjanje tetovaža Beograd",
@@ -178,6 +180,21 @@ export default function TattooRemovalPage() {
               </p>
             </div>
           </div>
+        </div>
+
+        <div className="w-full h-px bg-border" />
+
+        {/* Galerija */}
+        <div className="max-w-7xl mx-auto px-6 lg:px-10 py-20">
+          <div className="flex items-center gap-3 mb-12">
+            <div className="w-8 h-px bg-gold" />
+            <span className="text-gold text-xs tracking-[0.3em] uppercase">Galerija radova</span>
+          </div>
+          <GalleryRow
+            folder="laserskoskidanje"
+            images={laserskoskidanjeImages}
+            alt="Lasersko skidanje tetovaža i obrva — Studio Revive Beograd"
+          />
         </div>
 
         <div className="w-full h-px bg-border" />
