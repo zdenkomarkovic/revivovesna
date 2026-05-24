@@ -190,6 +190,15 @@ export default function Navbar() {
 
           <li>
             <a
+              href="/cenovnik"
+              className="text-sm tracking-[0.15em] uppercase text-cream font-medium hover:text-gold transition-colors duration-200"
+            >
+              Cenovnik
+            </a>
+          </li>
+
+          <li>
+            <a
               href="/kontakt"
               className="text-sm tracking-[0.15em] uppercase text-cream font-medium hover:text-gold transition-colors duration-200"
             >
@@ -349,6 +358,14 @@ export default function Navbar() {
               ))}
             </div>
           </div>
+
+          <a
+            href="/cenovnik"
+            onClick={() => setIsOpen(false)}
+            className="py-3 text-sm tracking-[0.15em] uppercase text-cream font-medium hover:text-gold transition-colors border-b border-border/50"
+          >
+            Cenovnik
+          </a>
 
           <a
             href="/kontakt"
