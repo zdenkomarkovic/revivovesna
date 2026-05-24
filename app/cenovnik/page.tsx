@@ -167,7 +167,7 @@ const sections = [
   {
     title: "Tetoviranje",
     note: "Minimalna cena 6.000 rsd",
-    items: [{ label: "Konsultacija i dizajn", price: "na upit" }],
+    items: [],
   },
 ];
 
@@ -189,10 +189,6 @@ export default function CenovnikPage() {
             <br />
             <span className="italic text-gold-light">tretmana</span>
           </h1>
-          <p className="text-muted text-base max-w-2xl mt-6 leading-relaxed">
-            Sve cene su informativne. Za tačnu cenu i individualne savete, pozovite nas ili zakažite
-            konsultaciju.
-          </p>
         </div>
 
         <div className="w-full h-px bg-border" />

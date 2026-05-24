@@ -57,7 +57,7 @@ export default function IndibaPage() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="relative aspect-[4/3] overflow-hidden">
               <Image
-                src="/tretmani/indiba.jpg"
+                src="/tretmani/INDIBA.png"
                 alt="INDIBA tretmani — Regeneracija i obnova kože Beograd"
                 fill
                 className="object-cover"

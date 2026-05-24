@@ -39,19 +39,18 @@ export function GalleryRow({ folder, images, alt }: GalleryRowProps) {
   return (
     <>
       {expanded ? (
-        <div className="columns-2 md:columns-3 lg:columns-4 gap-3 space-y-3">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
           {displayImages.map((f, idx) => (
             <div
               key={f}
-              className="break-inside-avoid overflow-hidden cursor-pointer"
+              className="relative aspect-[3/4] overflow-hidden cursor-pointer"
               onClick={() => setLightbox(idx)}
             >
               <Image
                 src={`/${folder}/${f}`}
                 alt={alt}
-                width={300}
-                height={300}
-                className="w-full h-auto object-cover hover:scale-105 transition-transform duration-500"
+                fill
+                className="object-cover hover:scale-105 transition-transform duration-500"
               />
             </div>
           ))}
