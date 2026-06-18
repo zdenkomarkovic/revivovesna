@@ -27,7 +27,7 @@ const sections = [
       { label: "Higijenski tretman lica", price: "4.000 rsd" },
       { label: "Higijenski tretman lica + voćne kiseline", price: "4.500 rsd" },
       { label: "Personalizovan tretman lica", price: "7.500 rsd" },
-      { label: "SILICIUM lift", price: "na upit" },
+      { label: "SILICIUM lift", price: "9.000 rsd" },
       { label: "Revive Mare", price: "9.000 rsd" },
       { label: "Hydrafacial basic", price: "5.000 rsd" },
       { label: "Hydrafacial premium", price: "9.000 rsd" },
