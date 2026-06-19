@@ -6,7 +6,7 @@ import { SITE_URL, STUDIO_PHONE } from "@/lib/constants";
 export const metadata = buildMetadata({
   title: "Cenovnik — Studio Revive Beograd",
   description:
-    "Cenovnik tretmana u kozmetičkom studiju REVIVE Beograd. PMU, laserska epilacija, INDIBA, tretmani lica, depilacija, trajna šminka i više. Promo 30% popust.",
+    "Cenovnik tretmana u kozmetičkom studiju REVIVE Beograd. PMU, laserska epilacija, Revive Thermalift, tretmani lica, depilacija, trajna šminka i više. Promo 30% popust.",
   url: `${SITE_URL}/cenovnik`,
 });
 

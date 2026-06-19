@@ -5,10 +5,10 @@ import { buildMetadata } from "@/lib/metadata";
 import { SITE_URL } from "@/lib/constants";
 
 export const metadata = buildMetadata({
-  title: "INDIBA tretmani — Regeneracija, zatezanje i obnova kože Beograd",
+  title: "Revive Thermalift tretmani — Regeneracija, zatezanje i obnova kože Beograd",
   description:
-    "INDIBA radiofrekventna tehnologija 448kHz — podstiče regeneraciju kože, kolagen, zatezanje i obnovu lica i tela. Studio Revive Beograd.",
-  url: `${SITE_URL}/tretmani/indiba`,
+    "Revive Thermalift radiofrekventna tehnologija 448kHz — podstiče regeneraciju kože, kolagen, zatezanje i obnovu lica i tela. Studio Revive Beograd.",
+  url: `${SITE_URL}/tretmani/revive-thermalift`,
 });
 
 const benefiti = [
@@ -27,7 +27,7 @@ const primena = [
   "Regeneracija nakon estetskih tretmana",
 ];
 
-export default function IndibaPage() {
+export default function ReviveThermaliftPage() {
   return (
     <>
       <Navbar />
@@ -40,11 +40,11 @@ export default function IndibaPage() {
             <span className="text-gold text-xs tracking-[0.3em] uppercase">Tretmani tela</span>
           </div>
           <h1 className="font-serif text-6xl lg:text-7xl text-cream font-light leading-tight mb-4">
-            INDIBA tretmani<br />
+            Revive Thermalift tretmani<br />
             <span className="italic text-gold-light">Regeneracija i obnova kože</span>
           </h1>
           <p className="text-muted text-base max-w-2xl mt-6 leading-relaxed">
-            Otkrijte snagu najnaprednije radiofrekventne tehnologije uz INDIBA tretmane koji
+            Otkrijte snagu najnaprednije radiofrekventne tehnologije uz Revive Thermalift tretmane koji
             podstiču prirodnu regeneraciju kože, poboljšavaju tonus i vraćaju svež, zdrav
             izgled licu i telu.
           </p>
@@ -57,8 +57,8 @@ export default function IndibaPage() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="relative aspect-[4/3] overflow-hidden">
               <Image
-                src="/tretmani/INDIBA.png"
-                alt="INDIBA tretmani — Regeneracija i obnova kože Beograd"
+                src="/tretmani/revive-thermalift.png"
+                alt="Revive Thermalift tretmani — Regeneracija i obnova kože Beograd"
                 fill
                 className="object-cover"
                 priority
@@ -66,7 +66,7 @@ export default function IndibaPage() {
             </div>
             <div>
               <p className="text-muted text-base leading-7 mb-6">
-                INDIBA koristi jedinstvenu radiofrekventnu tehnologiju od 448kHz koja stimuliše
+                Revive Thermalift koristi jedinstvenu radiofrekventnu tehnologiju od 448kHz koja stimuliše
                 cirkulaciju, proizvodnju kolagena i obnovu ćelija, bez invazivnih procedura i
                 dugog oporavka.
               </p>
@@ -85,7 +85,7 @@ export default function IndibaPage() {
           <div className="max-w-7xl mx-auto px-6 lg:px-10 py-20">
             <div className="flex items-center gap-3 mb-14">
               <div className="w-8 h-px bg-gold" />
-              <span className="text-gold text-xs tracking-[0.3em] uppercase">Benefiti INDIBA tretmana</span>
+              <span className="text-gold text-xs tracking-[0.3em] uppercase">Benefiti Revive Thermalift tretmana</span>
             </div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {benefiti.map((b) => (
@@ -117,7 +117,7 @@ export default function IndibaPage() {
                 <span className="text-gold text-xs tracking-[0.3em] uppercase">Za lice i telo</span>
               </div>
               <p className="text-muted text-base leading-7 mb-8">
-                INDIBA tretmani idealni su za:
+                Revive Thermalift tretmani idealni su za:
               </p>
               <ul className="space-y-4">
                 {primena.map((item) => (

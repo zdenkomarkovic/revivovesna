@@ -379,7 +379,7 @@ export default function TretmaniPage() {
 
         <div className="w-full h-px bg-border" />
 
-        {/* INDIBA */}
+        {/* Revive Thermalift */}
         <div className="bg-dark-2">
           <div className="max-w-7xl mx-auto px-6 lg:px-10 py-20">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -395,7 +395,7 @@ export default function TretmaniPage() {
                   Idealni za zatezanje kože, lifting lica i regeneraciju nakon estetskih tretmana.
                 </p>
                 <a
-                  href="/tretmani/indiba"
+                  href="/tretmani/revive-thermalift"
                   className="inline-flex items-center gap-3 border border-gold/40 text-gold text-xs tracking-[0.2em] uppercase px-6 py-3 hover:bg-gold hover:text-dark hover:border-gold transition-all duration-200"
                 >
                   Saznaj više
@@ -404,8 +404,8 @@ export default function TretmaniPage() {
               </div>
               <div className="relative aspect-[4/3] overflow-hidden order-1 lg:order-2">
                 <Image
-                  src="/tretmani/indiba.jpg"
-                  alt="INDIBA tretmani — Regeneracija i obnova kože"
+                  src="/tretmani/revive-thermalift.png"
+                  alt="Revive Thermalift tretmani — Regeneracija i obnova kože"
                   fill
                   className="object-cover"
                 />
