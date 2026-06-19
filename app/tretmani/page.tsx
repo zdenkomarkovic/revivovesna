@@ -386,11 +386,11 @@ export default function TretmaniPage() {
               <div className="order-2 lg:order-1">
                 <span className="text-gold text-xs tracking-[0.3em] uppercase">Tretmani tela</span>
                 <h2 className="font-serif text-4xl lg:text-5xl text-cream font-light mt-3 mb-6 leading-tight">
-                  INDIBA tretmani
+                  Revive Thermalift tretmani
                 </h2>
                 <div className="w-8 h-px bg-gold mb-8" />
                 <p className="text-muted text-base leading-7 mb-10">
-                  INDIBA koristi jedinstvenu radiofrekventnu tehnologiju od 448kHz koja stimuliše
+                  Revive Thermalift koristi jedinstvenu radiofrekventnu tehnologiju od 448kHz koja stimuliše
                   cirkulaciju, proizvodnju kolagena i obnovu ćelija — bez invazivnih procedura.
                   Idealni za zatezanje kože, lifting lica i regeneraciju nakon estetskih tretmana.
                 </p>

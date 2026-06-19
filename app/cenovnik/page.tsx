@@ -12,13 +12,13 @@ export const metadata = buildMetadata({
 
 const sections = [
   {
-    title: "INDIBA tretmani",
+    title: "Revive Thermalift tretmani",
     note: "Cene u eurima (€)",
     items: [
-      { label: "INDIBA paket od 6 tretmana", price: "210€" },
-      { label: "INDIBA paket od 10 tretmana", price: "300€" },
-      { label: "INDIBA održavanje — 1 tretman", price: "40€" },
-      { label: "INDIBA održavanje — mala regija", price: "20€" },
+      { label: "Revive Thermalift paket od 6 tretmana", price: "210€" },
+      { label: "Revive Thermalift paket od 10 tretmana", price: "300€" },
+      { label: "Revive Thermalift održavanje — 1 tretman", price: "40€" },
+      { label: "Revive Thermalift održavanje — mala regija", price: "20€" },
     ],
   },
   {

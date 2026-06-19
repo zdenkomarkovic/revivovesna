@@ -38,7 +38,7 @@ const tretmaniLinks = [
   { href: "/tretmani/lash-brow-lift", label: "Lash & Brow Lift" },
   { href: "/tretmani/hydrafacial", label: "Hydrafacial" },
   { href: "/tretmani/relaks-masaza", label: "Relaks masaža lica" },
-  { href: "/tretmani/indiba", label: "INDIBA tretmani" },
+  { href: "/tretmani/indiba", label: "Revive Thermalift tretmani" },
   { href: "/tretmani/anticelulit-masaze", label: "Anticelulit masaže i limfna drenaža" },
   { href: "/tretmani/kavitacija", label: "Kavitacija" },
   { href: "/tretmani/presoterapija", label: "Presoterapija" },
