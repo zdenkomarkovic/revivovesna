@@ -7,11 +7,11 @@ const nextConfig: NextConfig = {
   // Optimizacija slika - dodaj domene po potrebi
   images: {
     remotePatterns: [
-      // Primer:
-      // {
-      //   protocol: "https",
-      //   hostname: "example.com",
-      // },
+      // Sanity CDN (slike iz bloga)
+      {
+        protocol: "https",
+        hostname: "cdn.sanity.io",
+      },
     ],
   },
 

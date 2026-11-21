@@ -59,6 +59,7 @@ export default async function BlogPage() {
                         alt={post.mainImage.alt || post.title}
                         fill
                         sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                        unoptimized
                         className="object-cover transition-transform duration-500 group-hover:scale-105"
                       />
                     </div>
