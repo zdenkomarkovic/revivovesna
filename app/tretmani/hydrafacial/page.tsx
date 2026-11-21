@@ -5,7 +5,7 @@ import { buildMetadata } from "@/lib/metadata";
 import { SITE_URL } from "@/lib/constants";
 
 export const metadata = buildMetadata({
-  title: "Hydrafacial Hollywood Glow Beograd",
+  title: "Hydra Glow facial Beograd",
   description:
     "Hydrafacial — neinvazivan tretman dubokog čišćenja, hidratacije i osveženja lica. Rezultati vidljivi nakon prvog tretmana. Studio Revive Beograd.",
   url: `${SITE_URL}/tretmani/hydrafacial`,
@@ -68,8 +68,8 @@ export default function HydrafacialPage() {
             <span className="text-gold text-xs tracking-[0.3em] uppercase">Tretmani lica</span>
           </div>
           <h1 className="font-serif text-6xl lg:text-7xl text-cream font-light leading-tight mb-4">
-            Hydrafacial<br />
-            <span className="italic text-gold-light">Hollywood Glow</span>
+            Hydra Glow<br />
+            <span className="italic text-gold-light">facial</span>
           </h1>
           <p className="text-muted text-base max-w-2xl mt-6 leading-relaxed">
             Potpuno neinvazivan i bezbotan tretman dubokog čišćenja, hidratacije i
@@ -86,7 +86,7 @@ export default function HydrafacialPage() {
             <div className="relative aspect-[4/3] overflow-hidden">
               <Image
                 src="/tretmani/hydrafacial.png"
-                alt="Hydrafacial Hollywood Glow — Studio Revive Beograd"
+                alt="Hydra Glow facial — Studio Revive Beograd"
                 fill
                 className="object-cover"
                 priority

@@ -274,7 +274,7 @@ export default function TretmaniPage() {
             <div className="relative aspect-[4/3] overflow-hidden">
               <Image
                 src="/tretmani/hydrafacial.png"
-                alt="Hydrafacial Hollywood Glow"
+                alt="Hydra Glow facial"
                 fill
                 className="object-cover"
               />
@@ -282,7 +282,7 @@ export default function TretmaniPage() {
             <div>
               <span className="text-gold text-xs tracking-[0.3em] uppercase">Tretmani lica</span>
               <h2 className="font-serif text-4xl lg:text-5xl text-cream font-light mt-3 mb-6 leading-tight">
-                Hydrafacial <span className="text-muted text-2xl lg:text-3xl">Hollywood Glow</span>
+                Hydra Glow <span className="text-muted text-2xl lg:text-3xl">facial</span>
               </h2>
               <div className="w-8 h-px bg-gold mb-8" />
               <p className="text-muted text-base leading-7 mb-10">

@@ -36,7 +36,7 @@ const tretmaniLinks = [
   { href: "/tretmani/laserska-epilacija", label: "Laserska epilacija" },
   { href: "/tretmani/tretmani-lica", label: "Tretmani lica" },
   { href: "/tretmani/lash-brow-lift", label: "Lash & Brow Lift" },
-  { href: "/tretmani/hydrafacial", label: "Hydrafacial" },
+  { href: "/tretmani/hydrafacial", label: "Hydra Glow facial" },
   { href: "/tretmani/relaks-masaza", label: "Relaks masaža lica" },
   { href: "/tretmani/revive-thermalift", label: "Revive Thermalift tretmani" },
   { href: "/tretmani/anticelulit-masaze", label: "Anticelulit masaže i limfna drenaža" },
