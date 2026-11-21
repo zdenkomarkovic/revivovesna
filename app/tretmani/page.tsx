@@ -273,7 +273,7 @@ export default function TretmaniPage() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="relative aspect-[4/3] overflow-hidden">
               <Image
-                src="/tretmani/hydrafacial.jpg"
+                src="/tretmani/hydrafacial.png"
                 alt="Hydrafacial Hollywood Glow"
                 fill
                 className="object-cover"
