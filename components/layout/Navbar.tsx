@@ -199,6 +199,15 @@ export default function Navbar() {
 
           <li>
             <a
+              href="/blog"
+              className="text-sm tracking-[0.15em] uppercase text-cream font-medium hover:text-gold transition-colors duration-200"
+            >
+              Blog
+            </a>
+          </li>
+
+          <li>
+            <a
               href="/kontakt"
               className="text-sm tracking-[0.15em] uppercase text-cream font-medium hover:text-gold transition-colors duration-200"
             >
@@ -365,6 +374,14 @@ export default function Navbar() {
             className="py-3 text-sm tracking-[0.15em] uppercase text-cream font-medium hover:text-gold transition-colors border-b border-border/50"
           >
             Cenovnik
+          </a>
+
+          <a
+            href="/blog"
+            onClick={() => setIsOpen(false)}
+            className="py-3 text-sm tracking-[0.15em] uppercase text-cream font-medium hover:text-gold transition-colors border-b border-border/50"
+          >
+            Blog
           </a>
 
           <a
