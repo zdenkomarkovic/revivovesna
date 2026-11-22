@@ -34,3 +34,25 @@ export function getPost(slug: string): Promise<Post | null> {
     REVALIDATE,
   );
 }
+
+export interface PriceItem {
+  _key: string;
+  label: string;
+  price: string;
+}
+
+export interface PriceSection {
+  _key: string;
+  title: string;
+  note?: string;
+  items?: PriceItem[];
+}
+
+export async function getPriceList(): Promise<PriceSection[]> {
+  const res = await client.fetch<{ sections?: PriceSection[] } | null>(
+    `*[_type == "priceList"][0]{ sections[]{ _key, title, note, items[]{ _key, label, price } } }`,
+    {},
+    REVALIDATE,
+  );
+  return res?.sections ?? [];
+}
